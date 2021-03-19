@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPrime(number) {
+        let dem=0
+        let result=""
+        for (let i=2;i<number;i++){
+            if (number%i==0){
+                dem++
+            }
+        }
+        if (dem==0){
+            result="số nhập vào là snt"
+        }else {
+            result="số nhập vào ko phải snt"
+        }
+        return result
+    }
+    let input = parseInt(prompt("nhập 1 số"))
+    let check = isPrime(input)
+    alert(check)
+</script>
+</body>
+</html>
